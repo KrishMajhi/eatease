@@ -10,7 +10,7 @@ app = FastAPI()
 # Replace the vercel one with your real deployed frontend URL.
 ALLOWED_ORIGINS = [
     "http://localhost:1234",
-    "https://your-frontend.vercel.app",
+    "https://eatease-shop.vercel.app",
 ]
 
 app.add_middleware(
