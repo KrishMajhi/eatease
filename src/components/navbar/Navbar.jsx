@@ -45,11 +45,11 @@ const Navbar = () => {
             Contact
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/menu" className={({ isActive }) => "navlink" + (isActive ? " active" : "")}>
             Menu
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <div className="nav-cart-wrap">
             <NavLink to="/cart" className={({ isActive }) => "navlink" + (isActive ? " active" : "")}>
