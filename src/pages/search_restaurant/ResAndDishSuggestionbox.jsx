@@ -111,12 +111,12 @@ const ResAndDishSuggestionbox = ({ data }) => {
     try {
       let rawdata = normalCall
         ? await fetch(
-            `http://localhost:8000/api/swiggy/restaurants/search/v3?lat=${lat}&lng=${lng}&str=${querystr}&trackingId=${trackingId}&submitAction=SUGGESTION&queryUniqueId=${queryUniqueId}&metaData=${encodeURIComponent(
+            `https://web-production-5de0d.up.railway.app/api/swiggy/restaurants/search/v3?lat=${lat}&lng=${lng}&str=${querystr}&trackingId=${trackingId}&submitAction=SUGGESTION&queryUniqueId=${queryUniqueId}&metaData=${encodeURIComponent(
               metadata
             )}`
           )
         : await fetch(
-            `http://localhost:8000/api/swiggy/restaurants/search/v3?lat=${lat}&lng=${lng}&str=${querystr}&trackingId=undefined&submitAction=SUGGESTION&queryUniqueId=${encodeURIComponent(
+            `https://web-production-5de0d.up.railway.app/api/swiggy/restaurants/search/v3?lat=${lat}&lng=${lng}&str=${querystr}&trackingId=undefined&submitAction=SUGGESTION&queryUniqueId=${encodeURIComponent(
               queryUniqueId
             )}&metaData=${encodeURIComponent(
               metadata
@@ -153,14 +153,14 @@ const ResAndDishSuggestionbox = ({ data }) => {
 
     let rawdata = normalCall
       ? await fetch(
-          `http://localhost:8000/api/swiggy/restaurants/search/v3?lat=${lat}&lng=${lng}&str=${encodeURIComponent(
+          `https://web-production-5de0d.up.railway.app/api/swiggy/restaurants/search/v3?lat=${lat}&lng=${lng}&str=${encodeURIComponent(
             querystr
           )}&trackingId=${trackingId}&submitAction=SUGGESTION&queryUniqueId=${queryUniqueId}&metaData=${encodeURIComponent(
             metadata
           )}`
         )
       : await fetch(
-          `http://localhost:8000/api/swiggy/restaurants/search/v3?lat=${lat}&lng=${lng}&str=${encodeURIComponent(
+          `https://web-production-5de0d.up.railway.app/api/swiggy/restaurants/search/v3?lat=${lat}&lng=${lng}&str=${encodeURIComponent(
             querystr
           )}&trackingId=${trackingId}&submitAction=SUGGESTION&queryUniqueId=${queryUniqueId}&metaData=${encodeURIComponent(
             metadata

@@ -31,7 +31,7 @@ function FoodCollection() {
   async function callfoodCollectionapi() {
     try {
       let rawdata = await fetch(
-        `http://localhost:8000/api/swiggy/restaurants/list/v5?lat=${lat}&lng=${lng}&collection=${collectionid}&tags=${tags}&sortBy=&filters=&type=rcv2&offset=0&page_type=null`
+        `https://web-production-5de0d.up.railway.app/api/swiggy/restaurants/list/v5?lat=${lat}&lng=${lng}&collection=${collectionid}&tags=${tags}&sortBy=&filters=&type=rcv2&offset=0&page_type=null`
       );
       let resdata = await rawdata.json();
 

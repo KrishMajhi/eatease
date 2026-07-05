@@ -27,7 +27,7 @@ const RestaurantDetail = () => {
   async function resapifetch() {
     try {
       // ✅ Call YOUR Playwright backend
-      const backendUrl = `http://localhost:8000/api/menu?lat=${lat}&lng=${lng}&restaurantId=${resid}&query=`;
+      const backendUrl = `https://web-production-5de0d.up.railway.app/api/menu?lat=${lat}&lng=${lng}&restaurantId=${resid}&query=`;
 
       console.log("📡 Fetching from backend:", backendUrl);
 

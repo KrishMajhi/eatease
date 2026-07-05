@@ -27,7 +27,7 @@ const Home = () => {
         : location.lng;
 
       const response = await fetch(
-        `http://localhost:8000/api/swiggy/restaurants/list/v5?lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
+        `https://web-production-5de0d.up.railway.app/api/swiggy/restaurants/list/v5?lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
       );
       const result = await response.json();
 

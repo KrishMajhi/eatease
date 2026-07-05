@@ -25,7 +25,7 @@ function ResdetailComp_searchmenu() {
     setLoading(true);
     try {
       // ✅ Call YOUR Playwright backend
-      const backendUrl = `http://localhost:8000/api/menu?lat=${lat}&lng=${lng}&restaurantId=${resid}&query=${encodeURIComponent(searchText)}`;
+      const backendUrl = `https://web-production-5de0d.up.railway.app/api/menu?lat=${lat}&lng=${lng}&restaurantId=${resid}&query=${encodeURIComponent(searchText)}`;
 
       console.log("📡 Searching via backend:", backendUrl);
 

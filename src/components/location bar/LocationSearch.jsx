@@ -19,7 +19,7 @@ export default function LocationSearch() {
 
     try {
       const res = await fetch(
-        `http://localhost:8000/api/zomato/location/search?q=${encodeURIComponent(
+        `https://web-production-5de0d.up.railway.app/api/zomato/location/search?q=${encodeURIComponent(
           inputData,
         )}`,
       );
@@ -35,7 +35,7 @@ export default function LocationSearch() {
   async function handleonclick(location) {
     try {
       const url =
-        `http://localhost:8000/api/zomato/location/get?` +
+        `https://web-production-5de0d.up.railway.app/api/zomato/location/get?` +
         `lat=${location.entity_latitude}` +
         `&lon=${location.entity_longitude}` +
         `&entity_id=${location.entity_id}` +

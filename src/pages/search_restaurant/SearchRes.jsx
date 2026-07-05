@@ -26,7 +26,7 @@ function SearchRes() {
     if (!inputvalue.trim()) { setSuggestions([]); return; }
     try {
       const rawdata = await fetch(
-        `http://localhost:8000/api/swiggy/restaurants/search/suggest?lat=${lat}&lng=${lng}&str=${inputvalue}&trackingId=undefined&includeIMItem=true`
+        `https://web-production-5de0d.up.railway.app/api/swiggy/restaurants/search/suggest?lat=${lat}&lng=${lng}&str=${inputvalue}&trackingId=undefined&includeIMItem=true`
       );
       const jsonData = await rawdata.json();
       setSuggestions(jsonData?.data?.suggestions || []);
