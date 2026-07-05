@@ -1,0 +1,133 @@
+/* ── Home Page ─────────────────────────── */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 68px;
+  width: 100%;
+  background: var(--clr-bg);
+  min-height: 100vh;
+}
+
+/* ── Hero strip ─── */
+.home-hero {
+  width: 100%;
+  padding: var(--sp-8) var(--sp-8) var(--sp-6);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.home-hero h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--clr-ink);
+  line-height: 1.15;
+}
+.home-hero h1 span {
+  color: var(--clr-brand);
+}
+.home-hero p {
+  margin-top: 6px;
+  font-size: 1rem;
+  color: var(--clr-ink3);
+  font-weight: 500;
+}
+
+/* ── Carousel section ─── */
+.carousel-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto var(--sp-6);
+  padding: 0 var(--sp-8);
+}
+
+.animation-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.delivery-animation {
+  width: 200px;
+  height: 200px;
+}
+
+/* ── Section heading ─── */
+.section-heading {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 var(--sp-8);
+  margin: 0 auto var(--sp-5);
+}
+.section-heading h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--clr-ink);
+}
+.section-heading p {
+  font-size: 0.9rem;
+  color: var(--clr-ink3);
+  margin-top: 2px;
+}
+
+/* ── Divider ─── */
+.linebreaker {
+  width: calc(100% - 64px);
+  max-width: 1200px;
+  height: 1px;
+  background: var(--clr-border);
+  margin: var(--sp-6) auto;
+}
+
+/* ── Restaurant list ─── */
+.restaurant-section {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 var(--sp-8) var(--sp-12);
+  margin: 0 auto;
+}
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+}
+.restaurant-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ── Filter bar ─── */
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: var(--sp-5);
+}
+.filter-chip {
+  padding: 6px 16px;
+  border-radius: var(--r-full);
+  border: 1.5px solid var(--clr-border);
+  background: var(--clr-surface);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--clr-ink2);
+  cursor: pointer;
+  transition: background 0.18s, border-color 0.18s, color 0.18s;
+}
+.filter-chip:hover,
+.filter-chip.active {
+  background: var(--clr-brand-soft);
+  border-color: var(--clr-brand);
+  color: var(--clr-brand);
+}
+
+/* ── Empty state ─── */
+.empty-state {
+  text-align: center;
+  padding: var(--sp-12) 0;
+  color: var(--clr-ink3);
+}
+.empty-state p {
+  margin-top: var(--sp-3);
+  font-size: 0.95rem;
+}

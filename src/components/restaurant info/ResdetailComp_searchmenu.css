@@ -1,0 +1,201 @@
+/* Container for all menu items */
+.res-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 102px auto 0 auto;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+}
+
+/* Search input box with arrow and clear */
+.searchinputbox_res {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid lightgrey;
+  margin-bottom: 16px;
+  padding: 4px 0;
+  position: relative;
+}
+
+.searchinputbox_res input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 6px 4px 6px 32px; /* left padding for back arrow */
+}
+
+.back-arrow {
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.clear-input {
+  font-size: 18px;
+  color: #555;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+/* Hover effect for icons */
+.back-arrow:hover,
+.clear-input:hover {
+  color: #000;
+}
+
+/* Each card */
+.res-menu-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  gap: 20px;
+}
+
+/* Left section */
+.res-menu-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Food name */
+.res-menu-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Price */
+.res-menu-price {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+/* Offer tag */
+.res-menu-Offertag {
+  display: inline-block;
+  background-color: #ffeb3b;
+  color: #d32f2f;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin: 4px 0;
+}
+
+/* Rating */
+.res-menu-rating {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+}
+
+/* Guilt-free tag */
+.res-guiltfreetag {
+  display: inline-block;
+  width: 80px;
+  height: 18px;
+  background-color: #c8e6c9;
+  color: #2e7d32;
+  font-size: 10px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 4px;
+  margin: 4px 0;
+}
+
+/* Description */
+.res-menu-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 6px;
+}
+
+/* Right section */
+.res-menu-right {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Food image */
+.res-menu-image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Add button */
+.res-menu-add-button {
+  width: 100%;
+  padding: 6px 0;
+  border: 1px solid #28a745;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #28a745;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.res-menu-add-button:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Customisable text */
+.res-menu-customisable {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+
+/* Veg/Non-Veg Square Tag */
+.food-tag {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+/* Veg border */
+.food-tag.veg {
+  border-color: green;
+}
+
+/* Non-Veg border */
+.food-tag.non-veg {
+  border-color: red;
+}
+
+/* Triangle inside square */
+.food-tag .triangle {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 8px solid green; /* default Veg */
+}
+
+/* Non-Veg triangle color */
+.food-tag.non-veg .triangle {
+  border-bottom-color: red;
+}

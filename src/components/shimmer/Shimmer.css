@@ -1,0 +1,40 @@
+/* ── Shimmer loader ────────────────────── */
+@keyframes shimmer-wave {
+  0%   { background-position: -600px 0; }
+  100% { background-position: 600px 0; }
+}
+.shimmer-card {
+  width: 260px;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: var(--clr-surface);
+  box-shadow: var(--sh-sm);
+}
+.shimmer-img {
+  width: 100%;
+  height: 175px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
+  background-size: 600px;
+  animation: shimmer-wave 1.4s infinite linear;
+}
+.shimmer-info {
+  padding: 10px 13px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.shimmer-line {
+  border-radius: 4px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
+  background-size: 600px;
+  animation: shimmer-wave 1.4s infinite linear;
+}
+.sl-title  { height: 14px; width: 75%; }
+.sl-sub    { height: 11px; width: 55%; }
+.sl-detail { height: 10px; width: 40%; }
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}

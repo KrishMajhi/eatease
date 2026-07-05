@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Magnifying Glass</title>
+  <style>
+    /* Square tag */
+    .food-tag {
+      width: 16px;
+      height: 16px;
+      border: 1px solid #000;
+      /* black border */
+      border-radius: 2px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Veg / Non-Veg colors */
+    .food-tag.veg {
+      border-color: green;
+    }
+
+    .food-tag.non-veg {
+      border-color: red;
+    }
+
+    /* Triangle inside the square */
+    .food-tag .triangle {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 8px solid green;
+      /* default for Veg */
+    }
+
+    /* Non-Veg triangle color */
+    .food-tag.non-veg .triangle {
+      border-bottom-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="food-tag veg">
+    <div class="triangle"></div>
+  </div>
+
+  <div class="food-tag non-veg">
+    <div class="triangle"></div>
+  </div>
+
+</body>
+
+</html>

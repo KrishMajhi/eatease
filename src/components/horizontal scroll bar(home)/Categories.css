@@ -1,0 +1,76 @@
+/* ── What's on your mind carousel ───────── */
+.categories-section {
+  width: 100%;
+}
+
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--sp-4);
+}
+.col-h {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--clr-ink);
+}
+.arrow-buttons {
+  display: flex;
+  gap: var(--sp-2);
+}
+.nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid var(--clr-border);
+  background: var(--clr-surface);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.12s;
+  color: var(--clr-ink2);
+  box-shadow: var(--sh-sm);
+}
+.nav-btn:hover:not(:disabled) {
+  background: var(--clr-surface2);
+  border-color: var(--clr-ink3);
+  transform: scale(1.06);
+}
+.nav-btn:disabled, .nav-btn[disabled] {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.categories-container {
+  display: flex;
+  gap: var(--sp-4);
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 4px;
+}
+.categories-container::-webkit-scrollbar { display: none; }
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.category-card:hover { transform: scale(1.06); }
+
+.category-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: var(--r-md);
+}

@@ -1,0 +1,92 @@
+/* .food-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* text-align: left;  */
+// font-family: Arial,
+// sans-serif;
+// }
+
+.food-container {
+  text-align: left;
+  max-width: 93rem;
+  margin: 0 auto;
+  padding: 50px;
+  font-family: "Montserrat", Arial, sans-serif;
+  margin-top: 71px;
+}
+
+// .topheadingPara h1 {
+//   font-size: 40px;
+//   font-weight: 600;
+
+//   margin-bottom: 10px;
+//   font-family: "Montserrat", Arial, sans-serif;
+// }
+.topheadingPara {
+  margin-bottom: 30px;
+}
+
+.collection-name {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.describe {
+  color: #000000;
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+.allsorts {
+  margin-bottom: 30px;
+}
+
+// .restaurant-section {
+//   display: flex;
+//   flex-wrap: wrap;
+//   /* Wrap cards to next line if space runs out */
+//   gap: 20px;
+//   /* Space between cards */
+// }
+
+/* RestaurantCard specific styling */
+
+.para-food {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 900;
+}
+
+.restaurantFoodcollectionsection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem; // space between cards
+  margin-top: 2rem;
+  padding: 1rem;
+
+  // smooth entrance animation
+  animation: fadeIn 0.4s ease-in-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Optional: add responsive tweaks */
+@media (max-width: 768px) {
+  .restaurant-section {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 0.5r;
+  }
+}

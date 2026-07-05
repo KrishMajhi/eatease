@@ -1,0 +1,90 @@
+/* ===============================
+   EatEase — Global Design Tokens
+   =============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Brand */
+  --clr-brand:       #FC6011;
+  --clr-brand-light: #FF7A30;
+  --clr-brand-dark:  #E04E00;
+  --clr-brand-soft:  #FFF1EB;
+
+  /* Neutrals */
+  --clr-bg:          #FAFAFA;
+  --clr-surface:     #FFFFFF;
+  --clr-surface2:    #F4F4F5;
+  --clr-border:      #E8E8E8;
+  --clr-ink:         #1C1C1E;
+  --clr-ink2:        #3C3C43;
+  --clr-ink3:        #636366;
+  --clr-ink4:        #AEAEB2;
+
+  /* Semantic */
+  --clr-veg:    #1DB954;
+  --clr-nonveg: #E74C3C;
+  --clr-rating: #1B8A4C;
+
+  /* Spacing scale */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-8:  32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+
+  /* Radius */
+  --r-sm:   6px;
+  --r-md:   12px;
+  --r-lg:   18px;
+  --r-xl:   24px;
+  --r-full: 9999px;
+
+  /* Shadow */
+  --sh-sm:  0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.04);
+  --sh-md:  0 4px 16px rgba(0,0,0,.08);
+  --sh-lg:  0 8px 32px rgba(0,0,0,.12);
+  --sh-xl:  0 16px 48px rgba(0,0,0,.14);
+
+  /* Typography */
+  --font-body: 'Urbanist', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--clr-bg);
+  color: var(--clr-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "pip install -r requirements.txt && playwright install --with-deps chromium"
+  },
+  "deploy": {
+    "startCommand": "python proxy_server_playwright.py",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}

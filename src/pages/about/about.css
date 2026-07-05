@@ -1,0 +1,163 @@
+/* ── About Page ────────────────────────── */
+.about-container {
+  min-height: 100vh;
+  padding-top: 68px;
+  padding-bottom: var(--sp-16);
+  background: var(--clr-bg);
+}
+
+/* Hero */
+.about-hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--sp-16) var(--sp-6) var(--sp-10);
+  text-align: center;
+}
+.about-eyebrow {
+  display: inline-block;
+  color: var(--clr-brand);
+  font-weight: 800;
+  font-size: 0.82rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: var(--sp-3);
+}
+.about-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--clr-ink);
+  margin-bottom: var(--sp-4);
+}
+.brand-highlight {
+  color: var(--clr-brand);
+}
+.about-hero-sub {
+  font-size: 1.05rem;
+  color: var(--clr-ink3);
+  line-height: 1.6;
+}
+
+/* Stats */
+.about-stats {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 var(--sp-6);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-4);
+}
+.about-stat-card {
+  background: var(--clr-surface);
+  border-radius: var(--r-lg);
+  box-shadow: var(--sh-sm);
+  padding: var(--sp-6) var(--sp-3);
+  text-align: center;
+}
+.about-stat-value {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--clr-brand);
+}
+.about-stat-label {
+  font-size: 0.8rem;
+  color: var(--clr-ink3);
+  margin-top: 4px;
+}
+
+/* Mission */
+.about-mission {
+  max-width: 960px;
+  margin: var(--sp-16) auto 0;
+  padding: 0 var(--sp-6);
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--sp-10);
+  align-items: center;
+}
+.about-mission-text h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--clr-ink);
+  margin-bottom: var(--sp-4);
+}
+.about-mission-text p {
+  color: var(--clr-ink3);
+  line-height: 1.7;
+  margin-bottom: var(--sp-3);
+}
+.about-mission-visual {
+  background: var(--clr-brand-soft);
+  border-radius: var(--r-xl);
+  font-size: 3.5rem;
+  text-align: center;
+  padding: var(--sp-12) 0;
+}
+
+/* Values */
+.about-values {
+  max-width: 960px;
+  margin: var(--sp-16) auto 0;
+  padding: 0 var(--sp-6);
+}
+.about-section-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--clr-ink);
+  text-align: center;
+  margin-bottom: var(--sp-8);
+}
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-5);
+}
+.about-value-card {
+  background: var(--clr-surface);
+  border-radius: var(--r-lg);
+  box-shadow: var(--sh-sm);
+  padding: var(--sp-6) var(--sp-4);
+  text-align: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.about-value-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--sh-md);
+}
+.about-value-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: var(--sp-3);
+}
+.about-value-card h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--clr-ink);
+  margin-bottom: var(--sp-2);
+}
+.about-value-card p {
+  font-size: 0.85rem;
+  color: var(--clr-ink3);
+  line-height: 1.55;
+}
+
+@media (max-width: 860px) {
+  .about-stats,
+  .about-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-mission {
+    grid-template-columns: 1fr;
+  }
+  .about-mission-visual {
+    padding: var(--sp-8) 0;
+  }
+}
+@media (max-width: 480px) {
+  .about-stats,
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-hero h1 {
+    font-size: 1.9rem;
+  }
+}

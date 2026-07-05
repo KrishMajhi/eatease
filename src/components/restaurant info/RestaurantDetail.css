@@ -1,0 +1,252 @@
+/* ── Restaurant Detail Page ─────────────── */
+.restaurant-header {
+  font-family: var(--font-body);
+  padding: var(--sp-6) var(--sp-8) var(--sp-12);
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 68px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 0.82rem;
+  color: var(--clr-ink4);
+  margin-bottom: var(--sp-4);
+}
+.breadcrumb .current {
+  font-weight: 700;
+  color: var(--clr-ink2);
+}
+
+/* Restaurant name */
+.restaurantname {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: var(--clr-ink);
+  margin: var(--sp-2) 0 var(--sp-5);
+  line-height: 1.1;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 2px solid var(--clr-border);
+  margin-bottom: var(--sp-6);
+  gap: var(--sp-1);
+}
+.tabs span {
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.95rem;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.active-tab {
+  color: var(--clr-ink);
+  border-bottom-color: var(--clr-brand) !important;
+}
+.inactive-tab {
+  color: var(--clr-ink4);
+}
+.inactive-tab:hover {
+  color: var(--clr-ink3);
+}
+
+/* Info box */
+.restaurant-info-box {
+  background: var(--clr-surface);
+  border-radius: var(--r-lg);
+  padding: var(--sp-5) var(--sp-6);
+  box-shadow: var(--sh-md);
+  margin-bottom: var(--sp-8);
+  border: 1px solid var(--clr-border);
+}
+.restaurant-rating {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: 1rem;
+  margin-bottom: var(--sp-3);
+}
+.rating-circle {
+  background: var(--clr-rating);
+  color: white;
+  border-radius: var(--r-full);
+  padding: 4px 9px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.cuisine-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: var(--sp-3);
+}
+.tag {
+  font-size: 0.82rem;
+  color: var(--clr-ink3);
+  font-weight: 600;
+  background: var(--clr-surface2);
+  padding: 3px 10px;
+  border-radius: var(--r-full);
+}
+.outlet-info {
+  font-size: 0.9rem;
+  color: var(--clr-ink3);
+  margin-bottom: var(--sp-2);
+}
+.resdelivery-time {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--clr-ink);
+}
+
+/* Deals */
+.deals-heading {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: var(--sp-4);
+}
+.deals-container {
+  display: flex;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--sp-8);
+}
+.deal-card {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-md);
+  padding: var(--sp-4);
+  min-width: 200px;
+  box-shadow: var(--sh-sm);
+}
+.deal-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--clr-brand);
+  background: var(--clr-brand-soft);
+  padding: 3px 8px;
+  border-radius: var(--r-sm);
+  letter-spacing: 0.3px;
+}
+.deal-card strong { font-size: 0.95rem; font-weight: 800; }
+.deal-card p { font-size: 0.78rem; color: var(--clr-ink4); margin-top: 2px; }
+.bank-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: var(--r-sm);
+}
+
+/* Menu heading */
+.menu-heading-resdetail {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: var(--sp-4);
+  color: var(--clr-ink);
+  letter-spacing: -0.3px;
+}
+
+/* Menu search trigger */
+.menu-search-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--clr-surface);
+  border: 1.5px solid var(--clr-border);
+  border-radius: var(--r-md);
+  padding: var(--sp-4) var(--sp-5);
+  margin-bottom: var(--sp-6);
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--clr-ink4);
+  font-weight: 500;
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+.menu-search-2:hover {
+  border-color: var(--clr-brand);
+  box-shadow: 0 0 0 3px rgba(252, 96, 17, 0.08);
+}
+.magnifying-glass::after {
+  content: "🔍";
+  font-size: 1.1rem;
+}
+
+/* Accordion body */
+.accordianbody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+/* Floating menu button */
+.menu-section {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 500;
+}
+.menubtn {
+  background: var(--clr-brand);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 12px 20px;
+  border-radius: var(--r-full);
+  cursor: pointer;
+  box-shadow: var(--sh-lg);
+  transition: background 0.18s, transform 0.12s;
+  user-select: none;
+}
+.menubtn:hover {
+  background: var(--clr-brand-dark);
+  transform: scale(1.04);
+}
+
+.menu-list {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  right: 0;
+  background: var(--clr-surface);
+  border-radius: var(--r-lg);
+  box-shadow: var(--sh-xl);
+  border: 1px solid var(--clr-border);
+  min-width: 220px;
+  max-height: 340px;
+  overflow-y: auto;
+  list-style: none;
+  padding: var(--sp-2) 0;
+  display: none;
+  animation: fadeUp 0.18s ease;
+}
+.menu-list.active { display: block; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px var(--sp-5);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--clr-ink2);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.menu-list li:hover { background: var(--clr-brand-soft); }
+.item-count {
+  font-size: 0.78rem;
+  color: var(--clr-ink4);
+  font-weight: 500;
+}
