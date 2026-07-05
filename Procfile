@@ -1,1 +1,1 @@
-web: python proxy_server_playwright.py
+web: python server.py
